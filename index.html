@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lucky Unlucky Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="box">
+    <h1>Lucky Unlucky Page</h1>
+
+    <form id="luckyForm">
+      <label for="name">Enter your name:</label><br/>
+      <input type="text" id="name" name="name" required placeholder="Your Name" />
+      <br/><br/>
+      <button type="submit">Submit</button>
+    </form>
+
+    <p class="note">
+     <h2> Note: This is only a fun game for timepass.
+         It does not define anyone's personality.  
+      If it hurts you in any way, we're sorry.</h2>
+    </p>
+  </div>
+
+  <script>
+    document.getElementById("luckyForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      const name = document.getElementById("name").value.trim();
+      const firstChar = name.charAt(0).toUpperCase();
+
+      const luckyLetters = ["A", "D", "H", "I", "K", "L", "M", "O", "R", "S", "Y"];
+      const result = luckyLetters.includes(firstChar) ? "Lucky" : "Unlucky";
+
+      localStorage.setItem("result", result);
+      localStorage.setItem("name", name);
+
+      window.location.href = "result.html";
+    });
+  </script>
+</body>
+</html>

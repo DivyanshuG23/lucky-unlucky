@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia', serif;
+    background: linear-gradient(135deg, #1e1e2f, #3a3a5d); /* Royal gradient */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+  }
+  
+  .box {
+    background: #2e2e4d; /* Dark royal card */
+    border: 2px solid #d4af37; /* Golden border */
+    padding: 30px;
+    width: 320px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.6); /* Golden glow */
+  }
+  
+  h1 {
+    color: #ffd700; /* Royal gold heading */
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
+    padding: 12px;
+    width: 90%;
+    border: 1px solid #d4af37;
+    border-radius: 8px;
+    background: #fefefe;
+    color: #333;
+    font-size: 16px;
+  }
+  
+  button {
+    padding: 10px 25px;
+    background-color: #d4af37; /* Gold button */
+    border: none;
+    color: #2e2e4d;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #b1902e;
+  }
+  
+  .note {
+    font-size: 12px;
+    margin-top: 25px;
+    color: #ccc;
+    font-style: italic;
+  }
+  

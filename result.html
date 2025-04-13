@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Result</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 id="resultText"></h1>
+    <p class="note"><h3>Note: This is only a fun game for timepass. It does not define anyone's personality. If it hurts you in any way, we're sorry.</h3></p></div>
+  </div>
+
+  <script>
+    const result = localStorage.getItem("result");
+    const name = localStorage.getItem("name");
+    document.getElementById("resultText").innerText = `${name}, You are ${result}!`;
+  </script>
+</body>
+</html>
